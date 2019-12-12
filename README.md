@@ -1,0 +1,2 @@
+# AVR-ATmega32-configuration-and-Calculator
+It's hard for some people who want to use AVR to write a header files . This software allow you to use AVR ATmeg32 more easily . By use a simple GUI to confiure the MCAL (Micro controller Abstraction layer ) like DIO , ADC , TIMER 0 , TIMER 1 , TIMER 2 , GIE , Interrupt , USART , IIC and SPI .  and it's also provided by avr calculator for timers , ADC , IIC , USART and decimal to binary converter . when you are ready just include the header files .
