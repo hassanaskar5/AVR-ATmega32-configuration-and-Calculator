@@ -110,11 +110,12 @@ public class MainFrame extends javax.swing.JFrame {
         jComboBox4 = new javax.swing.JComboBox();
         jComboBox5 = new javax.swing.JComboBox();
         jLabel87 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         TMR0configPanel = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
@@ -828,9 +829,6 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel87.setText("Prescaller");
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel8.setText("Configuration ");
-
         jPanel3.setBackground(new java.awt.Color(251, 197, 49));
 
         jLabel9.setBackground(new java.awt.Color(232, 237, 239));
@@ -862,8 +860,36 @@ public class MainFrame extends javax.swing.JFrame {
             .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel10.setText("Calculator");
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel8.setText("Configuration ");
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel11.setText("Configuration ");
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel12.setText("Configuration ");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout ADCconfigPanelLayout = new javax.swing.GroupLayout(ADCconfigPanel);
         ADCconfigPanel.setLayout(ADCconfigPanelLayout);
@@ -871,45 +897,33 @@ public class MainFrame extends javax.swing.JFrame {
             ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ADCconfigPanelLayout.createSequentialGroup()
                 .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                        .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                                .addGap(393, 393, 393)
-                                .addComponent(jLabel8))
-                            .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                                .addGap(178, 178, 178)
-                                .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel44)
-                                    .addComponent(jLabel81)
-                                    .addComponent(jLabel85)
-                                    .addComponent(jLabel86)
-                                    .addComponent(jLabel87))
-                                .addGap(18, 18, 18)
-                                .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(0, 163, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCconfigPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(760, 760, 760)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSeparator2)))
-                .addContainerGap())
-            .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                .addGap(425, 425, 425)
-                .addComponent(jLabel10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(264, 264, 264)
+                        .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel81)
+                            .addComponent(jLabel85)
+                            .addComponent(jLabel86)
+                            .addComponent(jLabel87))
+                        .addGap(18, 18, 18)
+                        .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(58, 58, 58))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         ADCconfigPanelLayout.setVerticalGroup(
             ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ADCconfigPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(129, 129, 129)
                 .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1)
                     .addComponent(jLabel44))
@@ -931,11 +945,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jLabel87))
                 .addGap(30, 30, 30)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel10)
-                .addGap(294, 294, 294))
+                .addGap(211, 211, 211))
         );
 
         jComboBox1.getAccessibleContext().setAccessibleDescription("");
@@ -1418,10 +1428,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 line = reader.readLine();
             }
-            System.out.println(Content);
-            //Replacing oldString with newString in the oldContent
-            //newContent = oldContent.replaceAll("DIO_u8_INPUT", "DIO_u8_OUTPUT");
-            //Rewriting the input text file with newContent
+            
             writer = new FileWriter(fileToBeModified);
 
             writer.write(Content);
@@ -1436,7 +1443,6 @@ public class MainFrame extends javax.swing.JFrame {
             } catch (IOException e) {
             }
         }
-        System.out.println("done");
     }
 
     static void makeADCDriver(String filePath, String[] Config) {
@@ -1514,10 +1520,6 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 line = reader.readLine();
             }
-            System.out.println(Content);
-            //Replacing oldString with newString in the oldContent
-            //newContent = oldContent.replaceAll("DIO_u8_INPUT", "DIO_u8_OUTPUT");
-            //Rewriting the input text file with newContent
             writer = new FileWriter(fileToBeModified);
 
             writer.write(Content);
@@ -1532,7 +1534,6 @@ public class MainFrame extends javax.swing.JFrame {
             } catch (IOException e) {
             }
         }
-        System.out.println("done");
     }
 
     /**
@@ -1578,7 +1579,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox4;
     private javax.swing.JComboBox jComboBox5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
@@ -1640,8 +1642,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel linkedInLabel;
     private javax.swing.JPanel sidePanel;
     // End of variables declaration//GEN-END:variables
