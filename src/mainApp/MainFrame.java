@@ -822,8 +822,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jComboBox5.setBackground(new java.awt.Color(251, 197, 49));
         jComboBox5.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Divide By 2", "Divide By 4", "Divide By 8", "Divide By 16", "Divide By 32", "Divide By 64", "Divide By 128" }));
-        jComboBox5.setSelectedIndex(5);
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DIVID_BY_2", "DIVID_BY_4", "DIVID_BY_8", "DIVID_BY_16", "DIVID_BY_32", "DIVID_BY_64", "DIVID_BY_128" }));
         jComboBox5.setBorder(null);
 
         jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N

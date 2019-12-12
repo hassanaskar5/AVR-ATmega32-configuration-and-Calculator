@@ -36,7 +36,7 @@
 /*				is RIGHT_ADJUSTMENT								*/
 /****************************************************************/
 
-#define ADC_ADJUSTMENT				RIGHT_ADJUSTMENT
+#define ADC_ADJUSTMENT				LEFT_ADJUSTMENT
 
 
 /****************************************************************/
@@ -47,7 +47,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_CHANNEL_NUMBER		DIO_u8_PIN_0
+#define ADC_CHANNEL_NUMBER		DIO_u8_PIN_6
 
 /****************************************************************/
 /** !comment : Please Enter the Voltage Reference				*/
@@ -57,7 +57,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_AUTO_TRIGGER_SOURCE		TIMER_COUNTER_0_OVERFLOW
+#define ADC_AUTO_TRIGGER_SOURCE		TIMER_COUNTER_0_COMPARE_MATCH
 
 /****************************************************************/
 /** !comment : Please Enter the Voltage Reference				*/
@@ -67,7 +67,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_PRESCALLER				Divide By 4
+#define ADC_PRESCALLER				DIVID_BY_2
 
 
 
