@@ -20,7 +20,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_VOLTAGE_REFERENCE			AREF
+#define ADC_VOLTAGE_REFERENCE			AVCC
 
 
 
@@ -47,7 +47,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_CHANNEL_NUMBER		DIO_u8_PIN_3
+#define ADC_CHANNEL_NUMBER		DIO_u8_PIN_0
 
 /****************************************************************/
 /** !comment : Please Enter the Voltage Reference				*/
