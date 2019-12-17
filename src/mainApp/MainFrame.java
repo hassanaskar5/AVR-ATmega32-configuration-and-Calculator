@@ -118,6 +118,12 @@ public class MainFrame extends javax.swing.JFrame {
         jComboBox4 = new javax.swing.JComboBox();
         jComboBox5 = new javax.swing.JComboBox();
         ADCCalc = new javax.swing.JPanel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
         ADCTutorial = new javax.swing.JPanel();
         TMR0configPanel = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
@@ -130,6 +136,11 @@ public class MainFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+        });
 
         sidePanel.setBackground(new java.awt.Color(251, 197, 49));
 
@@ -371,6 +382,11 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         homePanel.setBackground(new java.awt.Color(255, 255, 255));
+        homePanel.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                homePanelFocusGained(evt);
+            }
+        });
 
         DIOconfigPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -641,7 +657,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         javax.swing.GroupLayout DIOconfigPanelLayout = new javax.swing.GroupLayout(DIOconfigPanel);
@@ -649,7 +665,7 @@ public class MainFrame extends javax.swing.JFrame {
         DIOconfigPanelLayout.setHorizontalGroup(
             DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DIOconfigPanelLayout.createSequentialGroup()
-                .addContainerGap(125, Short.MAX_VALUE)
+                .addContainerGap(122, Short.MAX_VALUE)
                 .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOconfigPanelLayout.createSequentialGroup()
                         .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -794,6 +810,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         ADCconfigPanel.setBackground(new java.awt.Color(255, 255, 255));
+        ADCconfigPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ADCconfigPanel.setPreferredSize(new java.awt.Dimension(961, 724));
 
         headerOptions.setBackground(new java.awt.Color(251, 197, 49));
@@ -863,6 +880,11 @@ public class MainFrame extends javax.swing.JFrame {
         jComboBox1.setBackground(new java.awt.Color(251, 197, 49));
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AVCC", "AREF", "INTERNAL" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         jPanel3.setBackground(new java.awt.Color(251, 197, 49));
 
@@ -941,11 +963,10 @@ public class MainFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
                         .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(123, 123, 123))
                     .addGroup(ADCCongigLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -984,15 +1005,73 @@ public class MainFrame extends javax.swing.JFrame {
 
         ADCCalc.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel91.setText("ADC Bits");
+
+        jLabel92.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel92.setText("Vref");
+
+        jLabel93.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel93.setText("Vin");
+
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ADCCalcLayout = new javax.swing.GroupLayout(ADCCalc);
         ADCCalc.setLayout(ADCCalcLayout);
         ADCCalcLayout.setHorizontalGroup(
             ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
+            .addGroup(ADCCalcLayout.createSequentialGroup()
+                .addGap(97, 97, 97)
+                .addGroup(ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(ADCCalcLayout.createSequentialGroup()
+                        .addComponent(jLabel93)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ADCCalcLayout.createSequentialGroup()
+                        .addComponent(jLabel92)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ADCCalcLayout.createSequentialGroup()
+                        .addComponent(jLabel91)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 305, Short.MAX_VALUE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(240, 240, 240))
         );
         ADCCalcLayout.setVerticalGroup(
             ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 817, Short.MAX_VALUE)
+            .addGroup(ADCCalcLayout.createSequentialGroup()
+                .addGap(146, 146, 146)
+                .addGroup(ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel91)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(88, 88, 88)
+                .addGroup(ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel92)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(88, 88, 88)
+                .addGroup(ADCCalcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel93)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(396, Short.MAX_VALUE))
         );
 
         ADCTutorial.setBackground(new java.awt.Color(255, 255, 255));
@@ -1056,7 +1135,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jLabel82)
                     .addComponent(jLabel83)
                     .addComponent(jLabel84))
-                .addContainerGap(697, Short.MAX_VALUE))
+                .addContainerGap(721, Short.MAX_VALUE))
         );
         TMR0configPanelLayout.setVerticalGroup(
             TMR0configPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1069,7 +1148,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jLabel83)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel84)
-                .addContainerGap(549, Short.MAX_VALUE))
+                .addContainerGap(616, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
@@ -1478,6 +1557,32 @@ public class MainFrame extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jLabel8FocusGained
 
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void homePanelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_homePanelFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_homePanelFocusGained
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        DIOconfigPanel.setVisible(true);
+        ADCconfigPanel.setVisible(false);
+        TMR0configPanel.setVisible(false);
+    }//GEN-LAST:event_formWindowActivated
+
     void setColor(JPanel panel) {
         panel.setBackground(new Color(130, 116, 77));
     }
@@ -1765,10 +1870,16 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel linkedInLabel;
     private javax.swing.JPanel sidePanel;
     // End of variables declaration//GEN-END:variables
