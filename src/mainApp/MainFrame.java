@@ -1520,7 +1520,7 @@ public class MainFrame extends javax.swing.JFrame {
         resetlabelColor(jLabel12);
         resetFontColor(jLabel11);
         resetFontColor(jLabel2);
-        
+
         ADCCongig.setVisible(true);
         ADCCalc.setVisible(false);
         ADCTutorial.setVisible(false);
@@ -1576,11 +1576,14 @@ public class MainFrame extends javax.swing.JFrame {
     private void homePanelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_homePanelFocusGained
         // TODO add your handling code here:
     }//GEN-LAST:event_homePanelFocusGained
-
+    boolean hassan = true;
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        DIOconfigPanel.setVisible(true);
-        ADCconfigPanel.setVisible(false);
-        TMR0configPanel.setVisible(false);
+        if (hassan) {
+            DIOconfigPanel.setVisible(hassan);
+            ADCconfigPanel.setVisible(!hassan);
+            TMR0configPanel.setVisible(!hassan);
+            hassan = false;
+        }
     }//GEN-LAST:event_formWindowActivated
 
     void setColor(JPanel panel) {
