@@ -5,12 +5,15 @@
 /*	 Description 		:    Configure Sense Mode [config.h] 	*/
 /****************************************************************/
 
+
+
 /****************************************************************/
 /* Description   : Guard to protect this File from include more */
 /*                 than one time .                              */
 /****************************************************************/
 #ifndef _ADC_CONFIG_H
 #define _ADC_CONFIG_H
+
 
 /****************************************************************/
 /** !comment : Please Enter the Voltage Reference				*/
@@ -20,7 +23,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_VOLTAGE_REFERENCE			INTERNAL
+#define VOLTAGE_REFERENCE			AVCC
 
 
 
@@ -36,7 +39,7 @@
 /*				is RIGHT_ADJUSTMENT								*/
 /****************************************************************/
 
-#define ADC_ADJUSTMENT				RIGHT_ADJUSTMENT
+#define ADJUSTMENT				RIGHT_ADJUSTMENT
 
 
 /****************************************************************/
@@ -47,7 +50,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_CHANNEL_NUMBER		DIO_u8_PIN_6
+#define ADC_CHANNEL_NUMBER		DIO_U8_PIN_0
 
 /****************************************************************/
 /** !comment : Please Enter the Voltage Reference				*/
@@ -67,7 +70,7 @@
 /*							    			INTERNAL			*/	
 /****************************************************************/
 
-#define ADC_PRESCALLER				DIVID_BY_16
+#define ADC_PRESCALLER				DIVID_BY_64
 
 
 

@@ -108,8 +108,6 @@ void ADC_voidDisable();
 /* Pre_condition  :  this function must be used after Interrupt */
 /*     				 initialized 							    */
 /****************************************************************/
-u8 ADC_u8ReadADC(pf addresscpy);
-
 
 
 /****************************************************************/

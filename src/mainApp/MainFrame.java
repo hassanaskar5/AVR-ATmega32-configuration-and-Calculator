@@ -117,10 +117,6 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel86 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox();
         jComboBox5 = new javax.swing.JComboBox();
-        jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        jPanel11 = new javax.swing.JPanel();
         ADCCalc = new javax.swing.JPanel();
         jLabel91 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
@@ -394,7 +390,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(ADCPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TMR0Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 429, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 532, Short.MAX_VALUE)
                 .addComponent(HassanPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -404,6 +400,7 @@ public class MainFrame extends javax.swing.JFrame {
                 homePanelFocusGained(evt);
             }
         });
+        homePanel.setLayout(new java.awt.CardLayout());
 
         DIOconfigPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -670,7 +667,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 143, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -682,9 +679,19 @@ public class MainFrame extends javax.swing.JFrame {
         DIOconfigPanelLayout.setHorizontalGroup(
             DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DIOconfigPanelLayout.createSequentialGroup()
-                .addContainerGap(122, Short.MAX_VALUE)
-                .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOconfigPanelLayout.createSequentialGroup()
+                .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(DIOconfigPanelLayout.createSequentialGroup()
+                        .addContainerGap(257, Short.MAX_VALUE)
+                        .addComponent(jLabel79)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(173, 173, 173)
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel80)
+                        .addGap(62, 62, 62))
+                    .addGroup(DIOconfigPanelLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
                         .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel64)
@@ -704,18 +711,9 @@ public class MainFrame extends javax.swing.JFrame {
                                 .addComponent(jLabel75)
                                 .addComponent(jLabel76)
                                 .addComponent(jLabel77)))
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel46)
-                        .addGap(2, 2, 2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOconfigPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel79)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(173, 173, 173)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel80)
-                        .addGap(62, 62, 62)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                        .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(101, 101, 101)))
                 .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DIOconfigPanelLayout.createSequentialGroup()
                         .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -745,7 +743,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(DIOconfigPanelLayout.createSequentialGroup()
                 .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DIOconfigPanelLayout.createSequentialGroup()
-                        .addGap(168, 168, 168)
+                        .addGap(28, 28, 28)
                         .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel70)
@@ -776,12 +774,9 @@ public class MainFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel76)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel75)
-                        .addGap(37, 37, 37))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOconfigPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
+                        .addComponent(jLabel75))
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
                 .addGroup(DIOconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -825,6 +820,8 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
+
+        homePanel.add(DIOconfigPanel, "card2");
 
         ADCconfigPanel.setBackground(new java.awt.Color(255, 255, 255));
         ADCconfigPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -927,7 +924,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 143, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -973,81 +970,31 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout ADCCongigLayout = new javax.swing.GroupLayout(ADCCongig);
         ADCCongig.setLayout(ADCCongigLayout);
         ADCCongigLayout.setHorizontalGroup(
             ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ADCCongigLayout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel81)
+                    .addComponent(jLabel85)
+                    .addComponent(jLabel86)
+                    .addComponent(jLabel87))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 202, Short.MAX_VALUE)
+                .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jComboBox5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(145, 145, 145))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCCongigLayout.createSequentialGroup()
-                .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(ADCCongigLayout.createSequentialGroup()
-                        .addGap(94, 94, 94)
-                        .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel44)
-                            .addComponent(jLabel81)
-                            .addComponent(jLabel85)
-                            .addComponent(jLabel86)
-                            .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel87))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
-                        .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jComboBox5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(123, 123, 123))
-                    .addGroup(ADCCongigLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(22, 22, 22))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
         ADCCongigLayout.setVerticalGroup(
             ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1056,33 +1003,25 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1)
                     .addComponent(jLabel44))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(94, 94, 94)
                 .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(94, 94, 94)
                 .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel85)
                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(94, 94, 94)
                 .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel86)
                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(94, 94, 94)
                 .addGroup(ADCCongigLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel87)
                     .addComponent(jComboBox5))
-                .addGap(149, 149, 149)
+                .addGap(45, 45, 45)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+                .addGap(126, 126, 126))
         );
 
         jComboBox1.getAccessibleContext().setAccessibleDescription("");
@@ -1210,6 +1149,8 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(ADCconfigPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(ADCTutorial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        homePanel.add(ADCconfigPanel, "card3");
 
         TMR0configPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1413,28 +1354,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
-        homePanel.setLayout(homePanelLayout);
-        homePanelLayout.setHorizontalGroup(
-            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1031, Short.MAX_VALUE)
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ADCconfigPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1031, Short.MAX_VALUE))
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(TMR0configPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(DIOconfigPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        homePanelLayout.setVerticalGroup(
-            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 817, Short.MAX_VALUE)
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ADCconfigPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 817, Short.MAX_VALUE))
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(TMR0configPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(DIOconfigPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        homePanel.add(TMR0configPanel, "card4");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1561,192 +1481,6 @@ public class MainFrame extends javax.swing.JFrame {
     int bit = 0;
     int[] Pins = new int[32];
     //String[] Config = new String[5];
-
-    //PORTC
-    private void jLabel47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MouseClicked
-        // TODO add your handling code here:
-
-
-    }//GEN-LAST:event_jLabel47MouseClicked
-
-    private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
-        // TODO add your handling code here:
-        Pins[20] = toggleRight(jLabel53);
-    }//GEN-LAST:event_jLabel53MouseClicked
-
-    private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
-        // TODO add your handling code here:
-        Pins[23] = toggleRight(jLabel55);
-    }//GEN-LAST:event_jLabel55MouseClicked
-
-    private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
-        // TODO add your handling code here:
-        Pins[22] = toggleRight(jLabel56);
-    }//GEN-LAST:event_jLabel56MouseClicked
-
-    private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
-        // TODO add your handling code here:
-        Pins[21] = toggleRight(jLabel57);
-    }//GEN-LAST:event_jLabel57MouseClicked
-
-    private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
-        // TODO add your handling code here:
-        Pins[28] = toggleRight(jLabel54);
-    }//GEN-LAST:event_jLabel54MouseClicked
-
-    private void jLabel58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel58MouseClicked
-        // TODO add your handling code here:
-        Pins[31] = toggleRight(jLabel58);
-    }//GEN-LAST:event_jLabel58MouseClicked
-
-    private void jLabel59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel59MouseClicked
-        // TODO add your handling code here:
-        Pins[30] = toggleRight(jLabel59);
-    }//GEN-LAST:event_jLabel59MouseClicked
-
-    private void jLabel60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60MouseClicked
-        // TODO add your handling code here:
-        Pins[29] = toggleRight(jLabel60);
-    }//GEN-LAST:event_jLabel60MouseClicked
-
-    private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
-        // TODO add your handling code here:
-        Pins[25] = toggleRight(jLabel51);
-    }//GEN-LAST:event_jLabel51MouseClicked
-
-    private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
-        // TODO add your handling code here:
-        Pins[27] = toggleRight(jLabel52);
-    }//GEN-LAST:event_jLabel52MouseClicked
-
-    private void jLabel61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel61MouseClicked
-        // TODO add your handling code here:
-        Pins[24] = toggleRight(jLabel61);
-    }//GEN-LAST:event_jLabel61MouseClicked
-
-    private void jLabel62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel62MouseClicked
-        // TODO add your handling code here:
-        Pins[26] = toggleRight(jLabel62);
-    }//GEN-LAST:event_jLabel62MouseClicked
-
-    private void jLabel63MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel63MouseClicked
-        // TODO add your handling code here:
-        Pins[3] = toggleLeft(jLabel63);
-    }//GEN-LAST:event_jLabel63MouseClicked
-
-    private void jLabel64MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel64MouseClicked
-        // TODO add your handling code here:
-        Pins[0] = toggleLeft(jLabel64);
-
-    }//GEN-LAST:event_jLabel64MouseClicked
-
-    private void jLabel65MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel65MouseClicked
-        // TODO add your handling code here:
-        Pins[2] = toggleLeft(jLabel65);
-    }//GEN-LAST:event_jLabel65MouseClicked
-
-    private void jLabel66MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel66MouseClicked
-        // TODO add your handling code here:
-        Pins[4] = toggleLeft(jLabel66);
-    }//GEN-LAST:event_jLabel66MouseClicked
-
-    private void jLabel67MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel67MouseClicked
-        // TODO add your handling code here:
-        Pins[7] = toggleLeft(jLabel67);
-    }//GEN-LAST:event_jLabel67MouseClicked
-
-    private void jLabel68MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel68MouseClicked
-        // TODO add your handling code here:
-        Pins[6] = toggleLeft(jLabel68);
-    }//GEN-LAST:event_jLabel68MouseClicked
-
-    private void jLabel69MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel69MouseClicked
-        // TODO add your handling code here:
-        Pins[5] = toggleLeft(jLabel69);
-    }//GEN-LAST:event_jLabel69MouseClicked
-
-    private void jLabel70MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel70MouseClicked
-        // TODO add your handling code here:
-        Pins[1] = toggleLeft(jLabel70);
-
-    }//GEN-LAST:event_jLabel70MouseClicked
-
-    private void jLabel71MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel71MouseClicked
-        // TODO add your handling code here:
-        Pins[11] = toggleLeft(jLabel71);
-    }//GEN-LAST:event_jLabel71MouseClicked
-
-    private void jLabel72MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel72MouseClicked
-        // TODO add your handling code here:
-        Pins[8] = toggleLeft(jLabel72);
-    }//GEN-LAST:event_jLabel72MouseClicked
-
-    private void jLabel73MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel73MouseClicked
-        // TODO add your handling code here:
-        Pins[10] = toggleLeft(jLabel73);
-    }//GEN-LAST:event_jLabel73MouseClicked
-
-    private void jLabel74MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel74MouseClicked
-        // TODO add your handling code here:
-        Pins[12] = toggleLeft(jLabel74);
-    }//GEN-LAST:event_jLabel74MouseClicked
-
-    private void jLabel75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel75MouseClicked
-        // TODO add your handling code here:
-        Pins[15] = toggleLeft(jLabel75);
-    }//GEN-LAST:event_jLabel75MouseClicked
-
-    private void jLabel76MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel76MouseClicked
-        // TODO add your handling code here:
-        Pins[14] = toggleLeft(jLabel76);
-    }//GEN-LAST:event_jLabel76MouseClicked
-
-    private void jLabel77MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel77MouseClicked
-        // TODO add your handling code here:
-        Pins[13] = toggleLeft(jLabel77);
-    }//GEN-LAST:event_jLabel77MouseClicked
-
-    private void jLabel78MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel78MouseClicked
-        // TODO add your handling code here:
-        Pins[9] = toggleLeft(jLabel78);
-    }//GEN-LAST:event_jLabel78MouseClicked
-
-    private void jLabel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseMoved
-        setColor(jPanel2);
-        setFontColor(jLabel7);
-    }//GEN-LAST:event_jLabel7MouseMoved
-
-    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
-        // TODO add your handling code here:
-        resetColor(jPanel2);
-        resetFontColor(jLabel7);
-    }//GEN-LAST:event_jLabel7MouseExited
-
-    private void jLabel7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MousePressed
-        // TODO add your handling code here:
-        String filePath = "src\\mainApp\\Drivers\\DIO_config.h";
-        makeDIODriver(filePath, Pins);
-    }//GEN-LAST:event_jLabel7MousePressed
-
-    private void jLabel47MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MousePressed
-        // TODO add your handling code here:
-        Pins[16] = toggleRight(jLabel47);
-    }//GEN-LAST:event_jLabel47MousePressed
-
-    private void jLabel49MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MousePressed
-        // TODO add your handling code here:
-        Pins[17] = toggleRight(jLabel49);
-    }//GEN-LAST:event_jLabel49MousePressed
-
-    private void jLabel48MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel48MousePressed
-        // TODO add your handling code here:
-        Pins[18] = toggleRight(jLabel48);
-    }//GEN-LAST:event_jLabel48MousePressed
-
-    private void jLabel50MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MousePressed
-        // TODO add your handling code here:
-        Pins[19] = toggleRight(jLabel50);
-    }//GEN-LAST:event_jLabel50MousePressed
 
     private void jLabel9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MousePressed
         // TODO add your handling code here:
@@ -1877,6 +1611,189 @@ public class MainFrame extends javax.swing.JFrame {
     private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox9ActionPerformed
+
+    private void jLabel7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MousePressed
+        // TODO add your handling code here:
+        String filePath = "src\\mainApp\\Drivers\\DIO_config.h";
+        makeDIODriver(filePath, Pins);
+    }//GEN-LAST:event_jLabel7MousePressed
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+        // TODO add your handling code here:
+        resetColor(jPanel2);
+        resetFontColor(jLabel7);
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void jLabel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseMoved
+        setColor(jPanel2);
+        setFontColor(jLabel7);
+    }//GEN-LAST:event_jLabel7MouseMoved
+
+    private void jLabel78MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel78MouseClicked
+        // TODO add your handling code here:
+        Pins[9] = toggleLeft(jLabel78);
+    }//GEN-LAST:event_jLabel78MouseClicked
+
+    private void jLabel77MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel77MouseClicked
+        // TODO add your handling code here:
+        Pins[13] = toggleLeft(jLabel77);
+    }//GEN-LAST:event_jLabel77MouseClicked
+
+    private void jLabel76MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel76MouseClicked
+        // TODO add your handling code here:
+        Pins[14] = toggleLeft(jLabel76);
+    }//GEN-LAST:event_jLabel76MouseClicked
+
+    private void jLabel75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel75MouseClicked
+        // TODO add your handling code here:
+        Pins[15] = toggleLeft(jLabel75);
+    }//GEN-LAST:event_jLabel75MouseClicked
+
+    private void jLabel74MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel74MouseClicked
+        // TODO add your handling code here:
+        Pins[12] = toggleLeft(jLabel74);
+    }//GEN-LAST:event_jLabel74MouseClicked
+
+    private void jLabel73MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel73MouseClicked
+        // TODO add your handling code here:
+        Pins[10] = toggleLeft(jLabel73);
+    }//GEN-LAST:event_jLabel73MouseClicked
+
+    private void jLabel72MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel72MouseClicked
+        // TODO add your handling code here:
+        Pins[8] = toggleLeft(jLabel72);
+    }//GEN-LAST:event_jLabel72MouseClicked
+
+    private void jLabel71MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel71MouseClicked
+        // TODO add your handling code here:
+        Pins[11] = toggleLeft(jLabel71);
+    }//GEN-LAST:event_jLabel71MouseClicked
+
+    private void jLabel70MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel70MouseClicked
+        // TODO add your handling code here:
+        Pins[1] = toggleLeft(jLabel70);
+    }//GEN-LAST:event_jLabel70MouseClicked
+
+    private void jLabel69MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel69MouseClicked
+        // TODO add your handling code here:
+        Pins[5] = toggleLeft(jLabel69);
+    }//GEN-LAST:event_jLabel69MouseClicked
+
+    private void jLabel68MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel68MouseClicked
+        // TODO add your handling code here:
+        Pins[6] = toggleLeft(jLabel68);
+    }//GEN-LAST:event_jLabel68MouseClicked
+
+    private void jLabel67MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel67MouseClicked
+        // TODO add your handling code here:
+        Pins[7] = toggleLeft(jLabel67);
+    }//GEN-LAST:event_jLabel67MouseClicked
+
+    private void jLabel66MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel66MouseClicked
+        // TODO add your handling code here:
+        Pins[4] = toggleLeft(jLabel66);
+    }//GEN-LAST:event_jLabel66MouseClicked
+
+    private void jLabel65MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel65MouseClicked
+        // TODO add your handling code here:
+        Pins[2] = toggleLeft(jLabel65);
+    }//GEN-LAST:event_jLabel65MouseClicked
+
+    private void jLabel64MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel64MouseClicked
+        // TODO add your handling code here:
+        Pins[0] = toggleLeft(jLabel64);
+    }//GEN-LAST:event_jLabel64MouseClicked
+
+    private void jLabel63MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel63MouseClicked
+        // TODO add your handling code here:
+        Pins[3] = toggleLeft(jLabel63);
+    }//GEN-LAST:event_jLabel63MouseClicked
+
+    private void jLabel62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel62MouseClicked
+        // TODO add your handling code here:
+        Pins[26] = toggleRight(jLabel62);
+    }//GEN-LAST:event_jLabel62MouseClicked
+
+    private void jLabel61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel61MouseClicked
+        // TODO add your handling code here:
+        Pins[24] = toggleRight(jLabel61);
+    }//GEN-LAST:event_jLabel61MouseClicked
+
+    private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
+        // TODO add your handling code here:
+        Pins[27] = toggleRight(jLabel52);
+    }//GEN-LAST:event_jLabel52MouseClicked
+
+    private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
+        // TODO add your handling code here:
+        Pins[25] = toggleRight(jLabel51);
+    }//GEN-LAST:event_jLabel51MouseClicked
+
+    private void jLabel60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60MouseClicked
+        // TODO add your handling code here:
+        Pins[29] = toggleRight(jLabel60);
+    }//GEN-LAST:event_jLabel60MouseClicked
+
+    private void jLabel59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel59MouseClicked
+        // TODO add your handling code here:
+        Pins[30] = toggleRight(jLabel59);
+    }//GEN-LAST:event_jLabel59MouseClicked
+
+    private void jLabel58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel58MouseClicked
+        // TODO add your handling code here:
+        Pins[31] = toggleRight(jLabel58);
+    }//GEN-LAST:event_jLabel58MouseClicked
+
+    private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
+        // TODO add your handling code here:
+        Pins[28] = toggleRight(jLabel54);
+    }//GEN-LAST:event_jLabel54MouseClicked
+
+    private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
+        // TODO add your handling code here:
+        Pins[21] = toggleRight(jLabel57);
+    }//GEN-LAST:event_jLabel57MouseClicked
+
+    private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
+        // TODO add your handling code here:
+        Pins[22] = toggleRight(jLabel56);
+    }//GEN-LAST:event_jLabel56MouseClicked
+
+    private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
+        // TODO add your handling code here:
+        Pins[23] = toggleRight(jLabel55);
+    }//GEN-LAST:event_jLabel55MouseClicked
+
+    private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
+        // TODO add your handling code here:
+        Pins[20] = toggleRight(jLabel53);
+    }//GEN-LAST:event_jLabel53MouseClicked
+
+    private void jLabel48MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel48MousePressed
+        // TODO add your handling code here:
+        Pins[18] = toggleRight(jLabel48);
+    }//GEN-LAST:event_jLabel48MousePressed
+
+    private void jLabel50MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MousePressed
+        // TODO add your handling code here:
+        Pins[19] = toggleRight(jLabel50);
+    }//GEN-LAST:event_jLabel50MousePressed
+
+    private void jLabel49MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MousePressed
+        // TODO add your handling code here:
+        Pins[17] = toggleRight(jLabel49);
+    }//GEN-LAST:event_jLabel49MousePressed
+
+    private void jLabel47MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MousePressed
+        // TODO add your handling code here:
+        Pins[16] = toggleRight(jLabel47);
+    }//GEN-LAST:event_jLabel47MousePressed
+
+    //PORTC
+    private void jLabel47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jLabel47MouseClicked
 
     void setColor(JPanel panel) {
         panel.setBackground(new Color(130, 116, 77));
@@ -2179,16 +2096,12 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

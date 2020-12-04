@@ -12,7 +12,7 @@
 
 #include "STD_Types.h"
 #include "Bit_Math.h"
-#include "Std_Types.h"
+#include "LBTY_int.h"
 
 /****************************************************************/
 /*********************** Component DIRECTIVES *******************/
@@ -41,26 +41,34 @@ void ADC_voidInit (void)
 {
 	
 	/*  ( if / else if ) condition for Macros */
-	#if VOLTAGE_REFERENCE == AREF
-	CLEAR_BIT( ADMUX , 6 );
-	CLEAR_BIT( ADMUX , 7 );
+	if (VOLTAGE_REFERENCE == AREF)
+	{
+		CLEAR_BIT( ADMUX , 6 );
+		CLEAR_BIT( ADMUX , 7 );
+	}
 
-	#elif VOLTAGE_REFERENCE == AVCC
-	SET_BIT( ADMUX , 6 );
-	CLEAR_BIT( ADMUX , 7 );
-
-	#elif VOLTAGE_REFERENCE == INTERNAL
-	SET_BIT( ADMUX , 6 );
-	SET_BIT( ADMUX , 7 );
 	
-	#endif
+	else if (VOLTAGE_REFERENCE == AVCC)
+	{
+
+		SET_BIT( ADMUX , 6 );
+		CLEAR_BIT( ADMUX , 7 );
+	}
+	
+	else if( VOLTAGE_REFERENCE == INTERNAL)
+	{
+
+		SET_BIT( ADMUX , 6 );
+		SET_BIT( ADMUX , 7 );
+	}
+	
+
 	/* End ( if ) condition for Macros */
 
 
 	/*  ( if / else if ) condition for Macros */
 	#if ADJUSTMENT == LEFT_ADJUSTMENT
 	SET_BIT( ADMUX , 5 );
-	
 	#elif ADJUSTMENT == RIGHT_ADJUSTMENT
 	CLEAR_BIT( ADMUX , 5 );
 	
@@ -161,7 +169,17 @@ void ADC_voidInit (void)
 	SET_BIT( ADCSRA , 0 );
 	CLEAR_BIT( ADCSRA , 1 );
 	CLEAR_BIT( ADCSRA , 2 );
-
+	
+	/*
+	||
+	(
+	CLEAR_BIT( ADCSRA , 0 );
+	CLEAR_BIT( ADCSRA , 1 );
+	CLEAR_BIT( ADCSRA , 2 );
+	
+	))
+	*/
+	
 	#elif ADC_PRESCALLER == DIVID_BY_4
 	CLEAR_BIT( ADCSRA , 0 );
 	SET_BIT( ADCSRA , 1 );
@@ -368,18 +386,17 @@ u16 ADC_u16ReadADC()
 	
 	/*  ( if / else if ) condition for Macros */
 	#if ADJUSTMENT == LEFT_ADJUSTMENT
-	mv_result =( (u16)(ADCH) );
-	
+	mv_result = (ADCH);
 
 
-	//mv_result = (((ADCH) * (5000UL) )/(256));
-	
 	#elif ADJUSTMENT == RIGHT_ADJUSTMENT
-	mv_result = ( ( (u16)(ADCH) ) | ( (u16)(ADCL<<8) ) );
+	mv_result = ( ( (u16)(ADCL) ) | ( (u16)(ADCH<<8) ) );
+	
 
 	#endif
-	
+
 	return mv_result;
+
 
 }
 

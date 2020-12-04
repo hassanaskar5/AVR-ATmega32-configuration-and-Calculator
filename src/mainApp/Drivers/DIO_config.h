@@ -19,16 +19,16 @@
 /***************************************************************************/
 /*                    For PORTA                                           */
 /*                    PINS 0 -> 7                                         */
-#define DIO_u8_PIN_DIR_0         DIO_u8_INPUT
-#define DIO_u8_PIN_DIR_1         DIO_u8_INPUT
-#define DIO_u8_PIN_DIR_2         DIO_u8_INPUT
+#define DIO_u8_PIN_DIR_0         DIO_u8_OUTPUT
+#define DIO_u8_PIN_DIR_1         DIO_u8_OUTPUT
+#define DIO_u8_PIN_DIR_2         DIO_u8_OUTPUT
 #define DIO_u8_PIN_DIR_3         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_4         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_5         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_6         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_7         DIO_u8_INPUT
 /*                    For PORTB                                           */
-/*                    PINS 8 -> 15                                        */
+/*                    PINS 8 -> 15                                        */  
 #define DIO_u8_PIN_DIR_8         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_9         DIO_u8_INPUT
 #define DIO_u8_PIN_DIR_10        DIO_u8_INPUT
